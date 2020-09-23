@@ -1,0 +1,115 @@
+.modal-header{
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #404040;
+	color: white;
+
+}
+.modal-dialog{
+	margin-top: 0;
+}
+.modal-header .btn{
+	color: #9E9E9E;
+	padding: 0 10px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.modal-body{
+	height: 75vh;
+}
+.modal-body h6{
+	color: #787878;
+	font-weight: 400
+}
+hr{
+	width: 100%;
+	margin: 10px auto;
+}
+.bk{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Imgs/Screenshot.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+.btn{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.ar{
+	border-left: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.icons{
+	font-size: 20px;
+}
+.icons i{
+	margin-right: 5px;
+	box-sizing: border-box;
+	padding: 7px;
+	color: #868686;
+}
+.icons .active{
+	border-radius: 5px;
+	background-color: #E4E4E4;
+	color: black;
+}
+.material-icons{
+	font-size: 20px;
+	color: #868686;
+}
+.tools{
+	  box-shadow: 5px 5px 5px #aaaaaa;
+	position: absolute;
+	bottom: 90px;
+	left: 0px;
+	color: #868686;
+}
+.brd{
+	border-right: 1px solid rgba(134, 134, 134, 0.5);
+	padding-right: 10px;
+}
+.pad{
+	position: relative;
+	bottom: 4px;
+}
+@media(max-width:800px){
+	.icons i{
+	box-sizing: border-box;
+	padding: 5px;
+}
+.icons .active{
+	border-radius: 5px;
+}
+	.icons{
+		font-size: 13px;
+	}
+	.material-icons{
+	font-size: 13px;
+	}
+	.modal-dialog{
+	width: 80%;
+	margin: 0 auto;
+	}
+}
+@media(max-width:550px){
+	.icons{
+	font-size: 10px;
+	}
+	.material-icons{
+	font-size: 10px;
+	}
+	.icons i{
+	padding: 0px;
+	}
+	.modal-dialog{
+	font-size: 15px;
+	}
+	.tools{
+		font-size: 10px;
+	}
+}

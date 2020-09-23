@@ -1,0 +1,37 @@
+.key{
+	text-align: center;
+	box-sizing: border-box;
+	font-size: 40px;
+	color: white;
+	margin:10px;
+	padding: 40px 50px;;
+	border: 2px solid white;
+	width: 135px;
+	height: 135px;
+	
+}
+
+body{
+/*	max-height: 100vh;*/
+	background-color: black;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.keys{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 75%;
+}
+.pic{
+	max-width: 616px;
+	width: 100%;
+	margin: 0 auto;
+}
+.red{
+	color: red;
+	border: 2px solid red;
+}

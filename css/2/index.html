@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en-GB" prefix="og: http://ogp.me/ns#">
+
+	<head>
+
+
+		<meta charset="UTF-8">
+		<link rel='stylesheet' id='bootstrapcss-css'  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css?ver=4.9.12' type='text/css' media='all' />
+
+		<link rel='stylesheet' id='font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=4.9.12' type='text/css' media='all' />
+
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'></script>
+
+	</head>
+
+	<style>
+		.add-question {
+			width: 25px;
+			height: 25px;
+			display: block;
+			text-align: center;
+			line-height: 23px;
+			border-radius: 50%;
+			border: 2px solid #000;
+			color:#000;
+			opacity: 0.5;
+			margin: -10px auto 0;
+			font-size: 14px;
+		}
+		.add-question:hover {
+			opacity:1;
+			cursor:pointer;
+		}
+		.question-input {
+		background:#f2f2f2;
+		padding: 35px 20px 20px;
+		position:relative;
+		  margin-bottom: 20px;
+		}
+		.remove-question{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+		background:#c4c4c4;
+		text-align: center;
+		font-size: 14px;
+		  cursor: pointer;
+		}
+		.remove-question:hover {
+		  color: red;
+		}
+		.question-input input {
+		  width: 100%;
+		  padding:4px 8px;
+		  border-radius:5px;
+		  margin-bottom:10px;
+		  border:1px solid #777;
+		}
+		.question-input textarea {
+		  width: 100%;
+		  padding:4px 8px;
+		  border-radius:5px;
+		  border:1px solid #777;
+		}
+		.update-code {
+			display: block;
+			text-align: center;
+			padding: 10px;
+			background:#1bd974;
+			color:#fff;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+		.update-code:hover {
+			background-color:#14a357;
+		}
+		.faqhtmlwrapper {
+			position: relative;
+			display: inline;
+		}
+		.faqhtml {
+			width: 100%;
+			padding: 4px 8px;
+			border: 1px solid #777;
+			height: 271px;
+			font-size: 14px;
+		}
+		.copyfaqhtml {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			font-size: 12px;
+			padding: 3px 10px;
+			background:#d9d9d9;
+			cursor: pointer;
+		}
+		.copyfaqhtml:hover {
+			background:#c6c6c6;
+		}
+	</style>
+
+
+	<div class="row">
+		<div class="col-md-6 ">
+
+			<h3>Add Your Questions</h3>
+
+
+
+			<div class="question-input-wrapper">
+
+				<div class="question-input faqQuestion1">
+						<span class="remove-question" data-toggle="tooltip" data-placement="left" data-original-title="Remove question">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</span>
+						<input placeholder="Question" class="faq-question">
+						<textarea placeholder="Answer" class="faq-answer"></textarea>
+				</div>
+			</div>
+
+			<div class="insider">
+
+			</div>
+
+			<span class="add-question"  data-toggle="tooltip" data-placement="top" data-original-title="Add question">
+					<i class="fa fa-plus" aria-hidden="true"></i></span>
+			<span class="update-code"><i class="fa fa-refresh" aria-hidden="true"></i> Update Code</span>
+
+		</div>
+
+		<div class="col-md-6">
+		<h3>Copy Your HTML Code</h3>
+
+			<div class="faqhtmlwrapper">
+
+			<textarea class="faqhtml" readonly></textarea>
+				<span class="copyfaqhtml"><i class="fa fa-copy"></i> Copy HTML</span></div>
+		</div>
+
+	</div>
+<!--	<div style="margin-top:70px;">-->
+	<div class="divFather" style="display: none"><div class="schema-faq-code"  itemscope="" itemtype="https://schema.org/FAQPage">
+		
+	</div></div>
+
+<!--</div>-->
+
+
+		<!--<div id="editor" itemscope="" itemtype="https://schema.org/FAQPage">-->
+			<!--&lt;!&ndash; This part is duplicated for each .question-input &ndash;&gt;-->
+
+			<!--<div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">-->
+
+				<!--<h3 itemprop="name" class="faq-q">value from input</h3>-->
+
+				<!--<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">-->
+
+				    <!--<p itemprop="text" class="faq-a">value from textarea</p>-->
+
+				<!--</div>-->
+
+			<!--</div>-->
+
+			<!--&lt;!&ndash; End &ndash;&gt;-->
+		<!--</div>-->
+
+
+
+	<!--</div>-->
+
+
+	<script>
+
+
+        $(".copyfaqhtml").click(function(){
+            $(".faqhtml").select();
+            document.execCommand('copy');
+        });
+
+
+		$(".add-question").bind("click", function () {
+
+            $('.divTest').empty();
+            var div = $("<div />");
+            div.html(GetDynamicTextBox(""));
+            $(".insider").append(div);
+        });
+
+        function GetDynamicTextBox(value) {
+            return '<div class="question-input-wrapper">' +
+                '<div class="question-input faqQuestion1">' +
+                '<span class="remove-question" data-toggle="tooltip" data-placement="left" data-original-title="Remove question">' +
+                '<i class="fa fa-times" aria-hidden="true"></i>' +
+                '</span>' +
+                '<input placeholder="Question" class="faq-question">' +
+                '<textarea placeholder="Answer" class="faq-answer"></textarea>' +
+                '</div>' +
+                '</div>'
+		}
+
+		$("body").on("click", ".remove-question", function () {
+            $('.schema-faq-code').empty();
+            $(this).closest(".question-input-wrapper").remove();
+        });
+
+
+        $('.update-code').click(function () {
+
+            $('.schema-faq-code').empty();
+
+		    $(".question-input-wrapper").each(function(){
+
+                var div = $(this);
+                var question  = div.find('.faq-question');
+				var answer  = div.find('.faq-answer');
+
+                $(question).on('input',function(e){
+					$('.schema-faq-code').empty();
+
+                });
+
+                $(answer).on('input',function(e){
+
+						$('.schema-faq-code').empty();
+
+                });
+
+
+				var divt = $('.schema-faq-code');
+
+				divt.append( 
+					"\n" +
+                "    " + '<div  itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">' + "\n" + 
+				"    " + "    " +	'<h3 itemprop="name" class="faq-q">' + question.val()+'</h3>' + "\n" + 
+                "    " + "    " +     '<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">' + "\n" + 
+
+                "    " + "    " + "    " +    ' <p itemprop="text" class="faq-a">'+answer.val()+'</p>' + "\n"  +
+
+               "    " + "    " +     '</div>' + "\n" + 
+				"    " +	'</div>'  + "\n"
+                     );
+
+				$('.faqhtml').val($('.divFather').html());
+
+			});
+
+		});
+
+		$('#updateCode').click(function () {
+
+		    $('.schema-faq-code').empty();
+
+        })
+
+	</script>
+
+
+
+</html>

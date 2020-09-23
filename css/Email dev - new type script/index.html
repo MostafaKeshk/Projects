@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/fontawesome-free-5.11.2-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+ <div class="bk">
+ <div class="container">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h6 class="modal-title">New Message</h6>
+        <div class="btns">
+        <button type="button" class="btn" data-dismiss="modal"><i class="fas fa-window-minimize"></i></button>
+        
+        <button type="button" class="btn" data-dismiss="modal"><i class="fas fa-compress-arrows-alt"></i></button>
+        
+        <button type="button" class="btn" data-dismiss="modal"><i class="fas fa-times"></i></button>
+        </div>
+        
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+      <div class="row">
+       <h6 class="ml-3 text-left">To:</h6> <h6 class="to ml-2"></h6> <h6 class="text-right mr-3 ml-auto">Cc Bcc</h6>
+       </div>
+       <hr>
+      	<div class="row">
+       <h6 class="ml-3 text-left">Subject:</h6><h6 class="sub ml-2"></h6>
+       </div>
+       <hr>
+        <div id="app"></div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+ 	<div class="col-xl-7 col-11 tools ml-3">
+ 		<i class="material-icons">undo</i>
+ 		<i class="material-icons brd">redo</i>
+ 		<p style="display: inline;" class="pad">Sans Serif</p>
+ 		<i class="fas fa-caret-down pad ml-1 brd"></i>
+ 		<i class="material-icons brd">text_fields</i>
+ 		<i class="material-icons">format_bold</i>
+ 		<i class="material-icons">format_italic</i>
+ 		<i class="material-icons">format_underlined</i>
+ 		<i class="material-icons">format_color_text</i>
+ 		<i class="fas fa-caret-down pad ml-1 brd"></i>
+ 		<i class="material-icons">format_align_left</i>
+ 		<i class="fas fa-caret-down pad ml-1"></i>
+ 		<i class="material-icons">format_list_numbered</i>
+ 		<i class="material-icons">format_list_bulleted</i>
+ 		<i class="material-icons">format_indent_decrease</i>
+ 		<i class="material-icons">format_indent_increase</i>
+ 		<i class="material-icons">format_quote</i>
+ 		<i class="material-icons brd">format_textdirection_r_to_l</i>
+ 		<i class="material-icons brd">strikethrough_s</i>
+ 		<i class="material-icons">format_clear</i>
+ 	</div>
+       <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Send</button>
+        <button type="button" class="btn btn-primary ar" data-dismiss="modal"><i class="fas fa-caret-down"></i></button>
+      </div>
+      <div class="icons row mr-auto">
+      <i class="material-icons active">format_color_text</i>
+      <i class="material-icons">attach_file</i>
+      <i class="material-icons">insert_link</i>
+      <i class="material-icons">insert_emoticon</i>
+      <i class="fab fa-google-drive"></i>
+	  <i class="material-icons">insert_photo</i>
+	  <i class="fas fa-lock"></i>
+	  </div>
+	  <div class="icons ml-auto">
+	  <i class="fas fa-ellipsis-v"></i>
+	  	<i class="fas fa-trash"></i>	
+	  </div>
+		</div>
+    </div>
+  </div>
+  </div>
+  </div>
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/popper.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="Scripts/script.js"></script>
+
+</body>
+
+</html>

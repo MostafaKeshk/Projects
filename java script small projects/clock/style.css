@@ -1,0 +1,55 @@
+*{
+	font-family: 'lato', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+body{
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	height: 100vh;
+}
+
+.clock{
+	width: 500px;
+	height: 500px;
+	border-radius: 500px;
+	border: 2px solid white;
+	position: relative;
+}
+.hand{
+	height: 5px;
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transform: rotate(90deg);
+	transform-origin: 100%;
+	transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+}
+.sec{
+	width: 240px;
+	left: 8.5px;
+	transform: all 0.5s;
+}
+.min{
+	width: 200px;
+	left: 48.5px;
+}
+.hour{
+	width: 130px;
+	left: 118.5px;
+}
+.core{
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	position: absolute;
+	top: 250px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: red;
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="711.81" height="1350.097" viewBox="0 0 711.81 1350.097">
+  <defs>
+    <filter id="Path_1470" x="0" y="0" width="711.81" height="1350.097" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur"/>
+      <feFlood flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Main_Wave" data-name="Main Wave" transform="translate(379.852 147.703)">
+    <path id="Path_1469" data-name="Path 1469" d="M3285.267,4483.6s147.027,52.509,28.005,325.559,115.521,203.038,192.535,337.812-229.292,402.573-229.292,402.573l-223.306-25.711,121.283-723.255L3063.508,4483.6Z" transform="translate(-3287.828 -4480)" fill="#efbdae"/>
+    <g transform="matrix(1, 0, 0, 1, -379.85, -147.7)" filter="url(#Path_1470)">
+      <path id="Path_1470-2" data-name="Path 1470" d="M3328.86,4519.245s147.027,52.509,28.005,325.559,115.521,203.037,192.535,337.812c65,113.749-143.049,322.254-209.675,384.664-12.162,11.392-191.742,0-191.742,0s-2.188-605.064,0-871.55c.724-88.207,0-176.484,0-176.484Z" transform="translate(-2998.51 -4370.75)" fill="#f9f9f9"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>APARTMENT</title><!--bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--fontawesome-->
+	 <script src="https://kit.fontawesome.com/872e7bd378.js" crossorigin="anonymous"></script>
+	 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+<!--	 bootstrapselect-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+<!--custom css-->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<div class="container">
+  <a class="navbar-brand" href="#"><img src="assets/Imgs/logo.png" alt="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto text-center">
+       <li class="nav-item active dropdown">
+        <a class="nav-link dropdown-toggle text-center" href="index.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item text-center active" href="#">Action</a>
+          <a class="dropdown-item text-center" href="#">Another action</a>
+          <a class="dropdown-item text-center" href="#">Another action2</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="#">Location</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="#">Gallary</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="#">Rooms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="#">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="Contact.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+<main>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active bk bk1">
+<div class="car carousel-caption text-center justify-content-center ss">
+       <h1 class="s">Lorem ipsum dol</h1>
+        <p class="s2">Integer vulputate porttitor sapien vel hendrerit</p>
+	  </div>
+    </div>
+    <div class="carousel-item bk bk1">
+      <div class="car carousel-caption text-center justify-content-center ss">
+       <h1 class="s">Lorem ipsum dol 2</h1>
+        <p class="s2">Integer vulputate porttitor sapien vel hendrerit 2</p>
+	  </div>
+    </div>
+    <div class="carousel-item bk bk1">
+      <div class="car carousel-caption text-center justify-content-center ss">
+       <h1 class="s">Lorem ipsum dol 3</h1>
+        <p class="s2">Integer vulputate porttitor sapien vel hendrerit 3</p>
+	  </div>
+    </div>
+  </div>
+  <div class="col-lg-10 offset-lg-1 text-center home-form2">
+
+                  
+        <form>
+  <div class="form-group row justify-content-center opc">
+        <h2 style="color: white;" class="col-12 text-center">3-STEPBOOKING:</h2>
+        <div class="col-lg-3 ml-lg-3">
+        <div class="row justify-content-center">
+        <div class="i col-lg-2 col-sm-1 col-2"><img src="assets/Imgs/icons/cal12.png" alt="1"></div>
+        <input type="text" name="datefilter" value="Select Dates" class="form-control  col-10 justify-content-center"/>
+
+	</div>
+	</div>
+	 <div class="col-lg-3 ml-lg-2 mr-lg-2">
+        <div class="row justify-content-center">
+  <div class="i2 col-lg-2 col-sm-1 col-2"><img src="assets/Imgs/icons/house.png" alt="1"></div>
+ 
+<select class="selectpicker form-control col-10">
+   	<option>Choose Your Propery</option>
+   	<option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+
+		 </div>
+	  </div>
+	  
+	  <div class="col-lg-3  mr-lg-2">
+        <div class="row justify-content-center">
+  <div class="i2 col-lg-2 col-sm-1 col-2"><img src="assets/Imgs/icons/bed12.png" alt="1"></div>
+ 
+<select class="selectpicker form-control col-10">
+   	<option>Choose Your Room</option>
+   	<option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+
+		 </div>
+	  </div>
+	  
+    <button  type="submit" class="btn srch col-lg-2 col-sm-11 col-12">SEARCH</button>
+      </div>
+		</form>
+        </div>
+</div>
+</main>
+<section class="home-book">
+<div class="container">
+<div class="home-book-t">
+<h6 style="color: #E0B47B;" class="text-center">BOOK YOUR APPARTMENT</h6>
+<h1 class="text-center mb-lg-5 mb-0">Our Property</h1>
+</div>
+
+<div class="xd1">
+<div class="card mb-3 home-p row">
+  <div class="row no-gutters">
+    <div class="col-lg-5">
+      <img src="assets/Imgs/Home/home-3.png" class="card-img higher" alt="...">
+    </div>
+    <div class="col-lg-7">
+      <div class="card-body ml-lg-5 p-0" style="border:none">
+        <h1 class="card-title tit mb-4">Lorem ipsum dolor sit</h1>
+        
+        <div class="card-text mb-lg-4" style="font-size: 20px;">
+        <div class="row">
+        <img src="assets/Imgs/icons/loc.png" alt="1" class="ml-3 mt-2 loc-icon">
+        <div class="ml-3">
+			<p class="mb-2">1600 Pennsylvania Avenue</p><p style="font-weight: bold">Washington DC, United States</p></div>
+      </div>
+       </div>
+        <p class="card-text" style="line-height: 26px;font-size: 20px;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec non suscipit enim. Sed mollis quam quis fringilla vestibulum. Praesent imperdiet velit vel facilisis venenatis. Donec vel luctus dolor, nec venenatis magna. Vivamus blandit augue nunc, eu consectetur tellus blandit ut.</p>
+      </div>
+    </div>
+  </div>
+	</div>
+<div class="row justify-content-center">
+<div class="col-lg-4 col row justify-content-center pl-2 pr-2 mr-lg-2">
+	<div class="card text-center col-lg-11 col-12 mb-5" style="width: 18rem;">
+  <img class="card-img-top" src="assets/Imgs/Home/home1.png" alt="Card image cap">
+  <div class="price"><span class="gil-bold">$150</span>/night</div>
+  <div class="card-body">
+    <h5 class="card-title text-left">Lorem ipsum dolor</h5>
+    <div class="icons">
+    <div class="ppl d-flex align-items-left">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/bed.png" alt="1" class="ml-4 mr-2"><p class="m-0 gil-bold"> x King Size</p>
+    	<img src="assets/Imgs/icons/bath.png" alt="1" class="ml-4 mr-2"><p class="m-0 gil-bold"> x 1</p>
+    	</div>
+    </div>
+    <hr>
+    <a href="#" class="btn">VIEW DETAILS</a>
+  </div>
+</div>
+</div><div class="col-lg-4 row justify-content-center pl-2 pr-2 ml-lg-2 mr-lg-2">
+<div class="card text-center col-lg-11 col-12 mb-5" style="width: 18rem;">
+  <img class="card-img-top" src="assets/Imgs/Home/home2.png" alt="Card image cap">
+  <div class="price"><span class="gil-bold">$85</span>/night</div>
+  <div class="card-body">
+    <h5 class="card-title text-left">Lorem ipsum dolor</h5>
+    <div class="icons">
+    <div class="ppl d-flex align-items-left">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/bed.png" alt="1" class="ml-4 mr-2"><p class="gil-bold m-0"> x 3</p>
+    	<img src="assets/Imgs/icons/bath.png" alt="1" class="ml-4 mr-2"><p class="gil-bold m-0"> x 1</p>
+    	</div>
+    </div>
+    <hr>
+    <a href="#" class="btn">VIEW DETAILS</a>
+  </div>
+</div>
+</div><div class="col-lg-4 row justify-content-center pl-2 pr-2 ml-lg-1">
+<div class="card text-center col-lg-11 col-12 mb-5" style="width: 18rem;">
+  <img class="card-img-top" src="assets/Imgs/Home/home3.png" alt="Card image cap">
+  <div class="price"><span class="gil-bold">$75</span>/night</div>
+  <div class="card-body">
+    <h5 class="card-title text-left">Lorem ipsum dolor</h5>
+    <div class="icons">
+    <div class="ppl d-flex align-items-left">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/bed.png" alt="1" class="ml-4 mr-2"><p class="gil-bold m-0"> x 3</p>
+    	<img src="assets/Imgs/icons/bath.png" alt="1" class="ml-4 mr-2"><p class="gil-bold m-0"> x 1</p>
+    	</div>
+    </div>
+    <hr>
+    <a href="#" class="btn">VIEW DETAILS</a>
+  </div>
+</div>
+</div>
+</div>
+
+<h1 class="tit mt-lg-5 mb-5" style="font-size: 30px; letter-spacing: 0;">Facilities</h1>
+					<div class="row m-0">
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+						<img src="assets/Imgs/icons/home2-1/Frame.png" alt="1" class="room-icon"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Wheelchair Friendly</p>
+					</div>
+					
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/Frame-2.png" alt="1" class="room-icon"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Pets Allowed</p>
+					</div>
+					
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/Frame-4.png" alt="1" class="room-icon room-icon1"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Air Condition</p>
+					</div>
+				</div>
+				
+				<div class="row m-0">
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/Frame-1.png" alt="1" class="room-icon"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Child Friendly</p>
+					</div>
+					
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/Frame-5.png" alt="1" class="room-icon room-icon1"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Elevator</p>
+					</div>
+					
+					<div class="row col-lg-4 mb-3 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/Frame-3.png" alt="1" class="room-icon"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">WiFi</p>
+					</div>
+				</div>
+				
+				
+				<h1 class="tit mt-lg-5 mb-5" style="font-size: 30px; letter-spacing: 0;">Added Services</h1>
+					<div class="row m-0">
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+						<img src="assets/Imgs/icons/home2-1/home-2-1-1/Frame-2.png" alt="1" class="room-icon room-icon1"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Breakfast <br></p>
+					</div>
+					
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/home-2-1-1/Frame.png" alt="1" class="room-icon room-icon1"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Airport Pickup</p>
+					</div>
+					
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/home-2-1-1/Frame-1.png" alt="1" class="room-icon room"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Cleaning</p>
+					</div>
+				</div>
+				
+				<div class="row m-0 mb-5">
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+						<img src="assets/Imgs/icons/home2-1/home-2-1-1/Frame-4.png" alt="1" class="room-icon"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Washer & dryer<br></p>
+					</div>
+					
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/home-2-1-1/Frame-3.png" alt="1" class="room-icon"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Parcing<br></p>
+					</div>
+				</div>
+
+
+</div>
+</div>
+</section>
+
+
+
+<section class="home-book m-0">
+<div class="container">
+
+<div class="xd1">
+<div class="card mb-3 home-p row">
+  <div class="row no-gutters">
+    <div class="col-lg-5">
+      <img src="assets/Imgs/Home/home-0.png" class="card-img higher" alt="...">
+    </div>
+    <div class="col-lg-7">
+      <div class="card-body ml-lg-5 p-0" style="border:none">
+        <h1 class="card-title tit mb-4">Lorem ipsum dolor sit</h1>
+        
+        <div class="card-text mb-lg-4">
+        <div class="row">
+        <img src="assets/Imgs/icons/loc.png" alt="1" class="ml-3 loc-icon mt-2">
+        <div class="ml-3" style="font-size: 20px;">
+			<p class="mb-2">1600 Pennsylvania Avenue</p><p style="font-weight: bold">Washington DC, United States</p></div>
+      </div>
+       </div>
+        <p class="card-text" style="line-height: 26px;font-size: 20px;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec non suscipit enim. Sed mollis quam quis fringilla vestibulum. Praesent imperdiet velit vel facilisis venenatis. Donec vel luctus dolor, nec venenatis magna. Vivamus blandit augue nunc, eu consectetur tellus blandit ut.</p>
+      </div>
+    </div>
+  </div>
+	</div>
+<div class="row justify-content-center">
+<div class="col-lg-4 col row justify-content-center pl-2 pr-2 mr-lg-2">
+	<div class="card text-center col-lg-11 col-12 mb-5" style="width: 18rem;">
+  <img class="card-img-top" src="assets/Imgs/Home/home1.png" alt="Card image cap">
+  <div class="price"><span class="gil-bold">$150</span>/night</div>
+  <div class="card-body">
+    <h5 class="card-title text-left">Lorem ipsum dolor</h5>
+    <div class="icons">
+    <div class="ppl d-flex align-items-left">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/bed.png" alt="1" class="ml-4 mr-2"><p class="m-0 gil-bold"> x King Size</p>
+    	<img src="assets/Imgs/icons/bath.png" alt="1" class="ml-4 mr-2"><p class="m-0 gil-bold"> x 1</p>
+    	</div>
+    </div>
+    <hr>
+    <a href="#" class="btn">VIEW DETAILS</a>
+  </div>
+</div>
+</div><div class="col-lg-4 row justify-content-center pl-2 pr-2 ml-lg-2 mr-lg-2">
+<div class="card text-center col-lg-11 col-12 mb-5" style="width: 18rem;">
+  <img class="card-img-top" src="assets/Imgs/Home/home2.png" alt="Card image cap">
+  <div class="price"><span class="gil-bold">$85</span>/night</div>
+  <div class="card-body">
+    <h5 class="card-title text-left">Lorem ipsum dolor</h5>
+    <div class="icons">
+    <div class="ppl d-flex align-items-left">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/bed.png" alt="1" class="ml-4 mr-2"><p class="gil-bold m-0"> x 3</p>
+    	<img src="assets/Imgs/icons/bath.png" alt="1" class="ml-4 mr-2"><p class="gil-bold m-0"> x 1</p>
+    	</div>
+    </div>
+    <hr>
+    <a href="#" class="btn">VIEW DETAILS</a>
+  </div>
+</div>
+</div><div class="col-lg-4 row justify-content-center pl-2 pr-2 ml-lg-1">
+<div class="card text-center col-lg-11 col-12 mb-5" style="width: 18rem;">
+  <img class="card-img-top" src="assets/Imgs/Home/home3.png" alt="Card image cap">
+  <div class="price"><span class="gil-bold">$75</span>/night</div>
+  <div class="card-body">
+    <h5 class="card-title text-left">Lorem ipsum dolor</h5>
+    <div class="icons">
+    <div class="ppl d-flex align-items-left">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/bed.png" alt="1" class="ml-4 mr-2"><p class="gil-bold m-0"> x 3</p>
+    	<img src="assets/Imgs/icons/bath.png" alt="1" class="ml-4 mr-2"><p class="gil-bold m-0"> x 1</p>
+    	</div>
+    </div>
+    <hr>
+    <a href="#" class="btn">VIEW DETAILS</a>
+  </div>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-lg-4 col row justify-content-center pl-2 pr-2 mr-lg-2">
+	<div class="card text-center col-lg-11 col-12 mb-5" style="width: 18rem;">
+  <img class="card-img-top" src="assets/Imgs/Home/home4.png" alt="Card image cap">
+  <div class="price"><span class="gil-bold">$150</span>/night</div>
+  <div class="card-body">
+    <h5 class="card-title text-left">Lorem ipsum dolor</h5>
+    <div class="icons">
+    <div class="ppl d-flex align-items-left">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/bed.png" alt="1" class="ml-4 mr-2"><p class="m-0 gil-bold"> x King Size</p>
+    	<img src="assets/Imgs/icons/bath.png" alt="1" class="ml-4 mr-2"><p class="m-0 gil-bold"> x 1</p>
+    	</div>
+    </div>
+    <hr>
+    <a href="#" class="btn">VIEW DETAILS</a>
+  </div>
+</div>
+</div><div class="col-lg-4 row justify-content-center pl-2 pr-2 ml-lg-2 mr-lg-2">
+<div class="card text-center col-lg-11 col-12 mb-5" style="width: 18rem;">
+  <img class="card-img-top" src="assets/Imgs/Home/home5.png" alt="Card image cap">
+  <div class="price"><span class="gil-bold">$85</span>/night</div>
+  <div class="card-body">
+    <h5 class="card-title text-left">Lorem ipsum dolor</h5>
+    <div class="icons">
+    <div class="ppl d-flex align-items-left">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/bed.png" alt="1" class="ml-4 mr-2"><p class="gil-bold m-0"> x 3</p>
+    	<img src="assets/Imgs/icons/bath.png" alt="1" class="ml-4 mr-2"><p class="gil-bold m-0"> x 1</p>
+    	</div>
+    </div>
+    <hr>
+    <a href="#" class="btn">VIEW DETAILS</a>
+  </div>
+</div>
+</div><div class="col-lg-4 row justify-content-center pl-2 pr-2 ml-lg-1">
+<div class="card text-center col-lg-11 col-12 mb-5" style="width: 18rem;">
+  <img class="card-img-top" src="assets/Imgs/Home/home6.png" alt="Card image cap">
+  <div class="price"><span class="gil-bold">$75</span>/night</div>
+  <div class="card-body">
+    <h5 class="card-title text-left">Lorem ipsum dolor</h5>
+    <div class="icons">
+    <div class="ppl d-flex align-items-left">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/ppl.png" alt="1">
+    	<img src="assets/Imgs/icons/bed.png" alt="1" class="ml-4 mr-2"><p class="gil-bold m-0"> x 3</p>
+    	<img src="assets/Imgs/icons/bath.png" alt="1" class="ml-4 mr-2"><p class="gil-bold m-0"> x 1</p>
+    	</div>
+    </div>
+    <hr>
+    <a href="#" class="btn">VIEW DETAILS</a>
+  </div>
+</div>
+</div>
+</div>
+
+
+<h1 class="tit mt-lg-5 mb-5" style="font-size: 30px; letter-spacing: 0;">Facilities</h1>
+					<div class="row m-0">
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+						<img src="assets/Imgs/icons/home2-1/Frame.png" alt="1" class="room-icon"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Wheelchair Friendly</p>
+					</div>
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/Frame-2.png" alt="1" class="room-icon"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Pets Allowed</p>
+					</div>
+					
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/Frame-4.png" alt="1" class="room-icon room-icon1"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Air Condition</p>
+					</div>
+				</div>
+				
+				<div class="row m-0">
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/Frame-1.png" alt="1" class="room-icon"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Child Friendly</p>
+					</div>
+					
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/Frame-5.png" alt="1" class="room-icon room-icon1"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Elevator</p>
+					</div>
+					
+					<div class="row col-lg-4 mb-3 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/Frame-3.png" alt="1" class="room-icon"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">WiFi</p>
+					</div>
+				</div>
+				
+				
+				<h1 class="tit mt-lg-5 mb-5" style="font-size: 30px; letter-spacing: 0;">Added Services</h1>
+					<div class="row m-0">
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+						<img src="assets/Imgs/icons/home2-1/home-2-1-1/Frame-2.png" alt="1" class="room-icon room-icon1"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Breakfast <br></p>
+					</div>
+					
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/home-2-1-1/Frame.png" alt="1" class="room-icon room-icon1"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Airport Pickup</p>
+					</div>
+					
+					<div class="row col-lg-4 mb-4 pl-2">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/home-2-1-1/Frame-1.png" alt="1" class="room-icon room"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Cleaning</p>
+					</div>
+				</div>
+				
+				<div class="row m-0 mb-5 pl-2">
+					<div class="row col-lg-4 mb-4">
+						<div class="icona">
+						<img src="assets/Imgs/icons/home2-1/home-2-1-1/Frame-4.png" alt="1" class="room-icon"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Washer & dryer<br></p>
+					</div>
+					
+					<div class="row col-lg-4 mb-4 pl-1">
+						<div class="icona">
+							<img src="assets/Imgs/icons/home2-1/home-2-1-1/Frame-3.png" alt="1" class="room-icon"></div>
+						<p style="font-size: 20px;" class="gil-bold mid">Parcing<br></p>
+					</div>
+				</div>
+
+
+
+
+</div>
+</div>
+</section>
+
+
+
+
+
+	<footer>
+	<div class="fot1">
+	<div class="container">
+	<div class="row justify-content-lg-end">
+		<div class="col-lg-8 row">
+			<a href="index.html" class="col-lg-2 col-6  text-center">Home</a>
+			<a href="#" class="col-lg-2 col-6 text-center">Location</a>
+			<a href="#" class="col-lg-2 col-6 text-center">Gallery</a>
+			<a href="#" class="col-lg-2 col-6 text-center">Rooms</a>
+			<a href="#" class="col-lg-2 col-6 text-center">Events</a>
+			<a href="Contact.html" class="col-lg-2 col-6 text-center">Contact Us</a>
+		</div>
+		<div class="col-lg-4 text-center icons row justify-content-center justify-content-lg-end p-0">
+			<a href="#" class="ml-3 mr-3"><img src="assets/Imgs/icons/fb.png" alt="1"></a>
+			<a href="#" class="ml-3 mr-3"><img src="assets/Imgs/icons/twtr.png" alt="1"></a>
+			<a href="#" class="ml-3 mr-3"><img src="assets/Imgs/icons/youtube.png" alt="1"></a>
+		</div>
+		
+	</div>
+	</div>
+	</div>
+	<div class="fot2">
+	<div class="container">
+		<div class="col-12 text-center mt-3 mb-3 icons1 row justify-content-center justify-content-lg-left">
+			<a href="#"><img src="assets/Imgs/icons/pp.png" alt="1"></a>
+			<a href="#"><img src="assets/Imgs/icons/visa.png" alt="1"></a>
+			<a href="#"><img src="assets/Imgs/icons/mc.png" alt="1"></a>
+			<a href="#"><img src="assets/Imgs/icons/discover.png" alt="1"></a>
+		</div>
+		<div class="col-12 text-center mt-3 mb-3" style="color: white; font-size: 14px;">© 2019 - Gothic Test Villa</div>
+		<div class="col-12 text-center mt-3 " style="color: #C0C0C1; font-size: 14px;">Vacation Rental Software By <span style="color: #A88963">HotelEntree</span></div>
+		</div>
+	</div>
+	</footer>
+
+<!--jquery-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!--bootstrap select-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+	<!--time-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<!--popper-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!--bootstrap-->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

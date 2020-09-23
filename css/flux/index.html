@@ -1,0 +1,280 @@
+<!--
+<?php 
+
+
+
+if(isset($_POST['sub'])){
+$address = $_POST['email'];
+$message = $_POST['msg'];
+$subject = "You have just received e-mail!";
+$headers  = "From: ".$address;
+if(empty($address) || empty($message)){
+} else {
+	$to = "mostafakashk@gmail.com";
+	$message ="Message: ".$message;
+	if(mail($to, $subject, $message, $headers)){
+ echo '<meta http-equiv="refresh" content="0; url=?successfull-submit">';
+	}
+  } 
+}
+?>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FLUX</title>
+	<!--	animate on scroll-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!--	animate.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+	<!--	bootstrap css-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!--	custom css-->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="all">
+		<div class="con-video mb-lg-0 mb-5">
+		<div id="header-video-gradient"></div>
+			<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="for-b">
+				<source src="src/video/hero.mp4" type="video/mp4">
+			</video>
+			<div id="header-video-gradient-bottom"></div>
+			<div class="container">
+				<nav>
+					<div class="p-t-10 nav-p clearHeader" style="width: 100%">
+					<div class="container">
+						<a href="#" class="logo"><img src="src/img/FLUX_WHITE_hires.png" alt="" class="img4">
+						</a>
+						<div class="social">
+
+
+							<a href="#" class="n-sec"><img src="src/img/twitter.png" alt="" class="img3"></a>
+							<a href="#" class="n-sec"><img src="src/img/instagram.png" alt="" class="img4"></a>
+</div>
+						</div>
+					</div>
+				</nav>
+
+				<header>
+					<h1 class="bold">
+						<span class="trans-text">MERCH </span>BY YOU
+					</h1>
+					<p>YOUR BRAND. YOUR STYLE. YOUR VOICE</p>
+					<button class="btn">Go to shop</button>
+					<button class="btn ml-3">Watch video</button>
+				</header>
+
+
+			</div>
+		</div>
+		<div class="container">
+			<main>
+				<h1 class="bold">
+					<span class="trans-text">WHAT </span>WE DO
+				</h1>
+				<p class="main-p">In 2020 anyone can launch a direct to consumer brand.
+					Setup a website, get some products/make a course and sell it online. It's easy, we get it.</p>
+				<div class="row pt-4">
+					<div class="col-lg-3" data-aos="fade-in" data-aos-duration="1000">
+						<img src="src/img/white_pic.png" alt="">
+						<h3 class="text-white pt-3 bold">Design</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis numquam repellendus harum nisi minima quisquam modi. Reprehenderit, consequuntur sunt quo.</p>
+					</div>
+
+					<div class="col-lg-3" data-aos="fade-in" data-aos-duration="2000">
+						<img src="src/img/white_pic.png" alt="">
+						<h3 class="text-white pt-3 bold">Design</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis numquam repellendus harum nisi minima quisquam modi. Reprehenderit, consequuntur sunt quo.</p>
+					</div>
+
+					<div class="col-lg-3" data-aos="fade-in" data-aos-duration="3000">
+						<img src="src/img/white_pic.png" alt="">
+						<h3 class="text-white pt-3 bold">Design</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis numquam repellendus harum nisi minima quisquam modi. Reprehenderit, consequuntur sunt quo.</p>
+					</div>
+
+					<div class="col-lg-3 c4" data-aos="fade-in" data-aos-duration="3000">
+						<img src="src/img/white_pic.png" alt="">
+						<h3 class="text-white pt-3 bold">Design</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis numquam repellendus harum nisi minima quisquam modi. Reprehenderit, consequuntur sunt quo.</p>
+					</div>
+				</div>
+			</main>
+
+		</div>
+		<section class="client">
+			<div class="container">
+				<div class="text-center p-10 cli" data-aos="fade-in" data-aos-duration="1000">
+					<h1 class="bold">OUT CLIENTS</h1>
+					<p>In 2020 anyone can launch a direct to consumer brand.
+						Setup a website, get some products/make a course and sell it online. It's easy, we get it.</p>
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000"><img src="src/img/black_pic.png" alt="" class="blk-img"></div>
+							<div class="col-lg-6 tex">
+								<h2>Jenna Lee</h2>
+								<a href="#"><img src="src/img/instagram2.png" alt="">thejennalee</a>
+								<h6>Followers: 500k</h6>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000"><img src="src/img/black_pic.png" alt="" class="blk-img"></div>
+							<div class="col-lg-6 tex">
+								<h2>Jenna Lee</h2>
+								<a href="#"><img src="src/img/instagram2.png" alt="">thejennalee</a>
+								<h6>Followers: 500k</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<img src="src/img/black_pic.png" data-aos="fade-up" data-aos-duration="500" alt="" class="blk-img">
+							
+					</div>
+
+					<div class="col-lg-6 tex t2">
+
+							
+							<div class="col-lg-6 tex">
+								<h2>Jenna Lee1</h2>
+								<a href="#"><img src="src/img/instagram2.png" alt="">thejennalee</a>
+								<h6>Followers: 500k</h6>
+							</div>
+							<div class="row">
+								<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000"><img src="src/img/black_pic.png" alt="" class="blk-img1"></div>
+								<div class="col-lg-6 tex1">
+								<h2>Jenna Lee</h2>
+								<a href="#"><img src="src/img/instagram2.png" alt="">thejennalee</a>
+								<h6>Followers: 500k</h6>
+							</div>
+							</div>
+							
+						
+					</div>
+				</div>
+				
+				
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000"><img src="src/img/black_pic.png" alt="" class="blk-img"></div>
+							<div class="col-lg-6 tex">
+								<h2>Jenna Lee</h2>
+								<a href="#"><img src="src/img/instagram2.png" alt="">thejennalee</a>
+								<h6>Followers: 500k</h6>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000"><img src="src/img/black_pic.png" alt="" class="blk-img"></div>
+							<div class="col-lg-6 tex">
+								<h2>Jenna Lee</h2>
+								<a href="#"><img src="src/img/instagram2.png" alt="">thejennalee</a>
+								<h6>Followers: 500k</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</section>
+		<section class="contact p-10">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6" data-aos="fade-in" data-aos-duration="1000"><img src="src/img/white_pic.png" alt="" class="im"></div>
+					<div class="col-1 d-lg-block d-none"></div>
+					<div class="col-lg-4">
+						<h1 data-aos="fade-in" data-aos-duration="1000" class="bold">GET IN <hr> TOUCH</h1>
+						<p data-aos="fade-in" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores dolore officia consectetur recusandae! Facere.</p>
+						<form action="index.php" method="post">
+          <div class="form-group" data-aos="fade-up" data-aos-duration="1000">
+            
+            <input type="email" class="form-control" id="recipient-name" placeholder="Your E-mail" name="email" required autocomplete="off">
+          </div>
+          <div class="form-group" data-aos="fade-up" data-aos-duration="1500">
+        
+            <textarea class="form-control" id="message-text" placeholder="Your Message..." name="msg" autocomplete="off"></textarea>
+          </div>
+        
+        <button type="submit" class="btn jn" name="sub" data-aos="fade-up" data-aos-duration="2000">Send message <img src="src/img/sent-mail.png" alt="" class="mail-img"></button>
+        
+        </form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="client">
+			<div class="container">
+			<div class="text-center p-10" style="padding-bottom: 30px" data-aos="fade-in" data-aos-duration="1000">
+				<h5>Follow us</h5>
+				<div class="text-center">
+					<a href="#"><img src="src/img/instagram2.png" alt="" style="height:15px;width:15px;margin:5px;"></a>
+					<a href="#"><img src="src/img/twitter2.png" alt="" style="height:15px;width:18px;margin:5px;"></a>
+				</div>
+			</div>
+				<div class="text-center cli-1" data-aos="fade-in" data-aos-duration="1000">
+					<h1 class="bold"><span class="at">@</span><span class="at-text">FLUXOFFICIAL</span></h1>
+					<p style="clear: both;">In 2020 anyone can launch a direct to consumer brand.
+						Setup a website, get some products/make a course and sell it online. It's easy, we get it.</p>
+				</div>
+				<div class="row pt-4" style="clear: both;">
+					<div class="col-lg-3 mt-3" data-aos="fade-up" data-aos-duration="1000">
+						<img src="src/img/BLACK2.png" alt="" style="width: 100%">
+					</div>
+					<div class="col-lg-3 mt-3" data-aos="fade-up" data-aos-duration="1500">
+						<img src="src/img/BLACK2.png" alt="" style="width: 100%">
+					</div>
+					<div class="col-lg-3 mt-3" data-aos="fade-up" data-aos-duration="2000">
+						<img src="src/img/BLACK2.png" alt="" style="width: 100%">
+					</div>
+					<div class="col-lg-3 mt-3" data-aos="fade-up" data-aos-duration="2500">
+						<img src="src/img/BLACK2.png" alt="" style="width: 100%">
+					</div>
+					
+				</div>
+			</div>
+			</section>
+			<nav class="footer">
+				<div class="container">
+					<div class="p-t-10 nav-p">
+						<a href="#" class="logo"><img src="src/img/FLUX_BLACK_hires.png" alt="">
+						</a>
+						<div class="social">
+
+
+							<a href="#" class="n-sec"><img src="src/img/twitter2.png" alt="" class="img3"></a>
+							<a href="#" class="n-sec"><img src="src/img/instagram2.png" alt=""></a>
+
+						</div>
+					</div>
+					</div>
+				</nav>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="src/js/waypoints/lib/jquery.waypoints.min.js"></script>
+	<script src="src/js/waypoints/src/shortcuts/inview.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<script src="script.js"></script>
+</body></html>

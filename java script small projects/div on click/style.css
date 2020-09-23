@@ -1,0 +1,19 @@
+.item{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0.5px 0.5px  0.5px 0.5px black;
+}
+body{
+	height: 100vh;
+	position: relative;
+	width: 100%;
+	background-color: black;
+	margin: 0;
+	overflow: hidden;
+	color: white;
+	font-size: 25px;
+}

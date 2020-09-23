@@ -1,0 +1,157 @@
+
+#left{
+	background-color: #B72824;
+	height: 100vh;
+	color: white;
+}
+.icons{
+	text-align: center;
+	font-size: 35px;
+	width: 70px;
+	color: gray;
+	padding: 7px 15px;
+	box-sizing: border-box;
+	height:50px;
+	background-color: #FAF9F9;
+	border: none;
+}
+.bulb{
+	padding: 7px 20px;
+}
+.items-text{
+	width: 80%;
+	box-sizing: border-box;
+	font-size: 23px;
+	line-height: 22px;
+	float: left;
+}
+.item{
+		margin: 50px 0;
+}
+.logo{
+	padding: 0;
+	margin-bottom: 40px;
+}
+.logo img{
+height: 100px;
+}
+.wel-text{
+	font-size: 50px;
+	margin-bottom: 70px;
+
+}
+.num{
+	height: 4vh;
+}
+.sub{
+	background-color: #B6C2CD;
+	border-radius: 0;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.sub:hover{
+	transition: 0.3s;
+	background-color: #B72824;
+	color: white;
+}
+p{
+	color: #BBBBBA;
+	font-weight: 500;
+	line-height: 20px;
+
+}
+a{
+	text-decoration: underline;
+	color: #BBBBBA;
+}
+a:hover{
+	transition: 0.3s;
+	color: #B72824;
+}
+img{
+	height: 50px;
+}
+
+
+.CR{
+	font-size: 15px;
+	color: black;
+	text-align: left;
+	position: absolute;
+	bottom: 8px;
+}
+@media(max-width:359px){
+	.num{
+		width: 150px;
+	}
+	h4{
+		font-size: 23px;
+	}
+	h6{
+		font-size: 13px;
+	}
+}
+@media(max-width:991px){
+	#left{
+		background-color: white;
+		color: black;
+	}
+	#try{
+		position: absolute;
+		top: 265%;
+		background-color: #B72824;
+		padding:0 25px 1px;
+		padding-top: 50px;
+		box-sizing: border-box;
+		margin-right: 0px;
+	}
+	.item{
+		position: static;
+		margin: 5% 0;
+	}
+	.logo{
+		margin: 50px auto 0;
+	}
+	.num{	
+		height: 40px;
+	}
+	.sub{
+		height: 40px;
+		font-size: 15px;
+	}
+	.sub:hover{
+		background-color: #B6C2CD;
+		color: black;
+	}
+	.wel-text{
+		font-size: 40px;
+		margin: 0 0 70px;
+		text-align: center;
+	}
+	.items-text{
+		font-size: 18px;
+	}
+	.icons{
+		margin: 0;
+	}
+	.CR{
+		font-size: 15px;
+		color: gray;
+		position: static;
+		margin-bottom: 40px;
+	}
+	h4,h6{
+		color: white;
+		font-weight: 100;
+	}
+	p{
+		font-weight: 100;
+	}
+	#left{
+		height: auto;
+	}
+	a:hover{
+	transition: 0.3s;
+	color: #BBBBBA;
+}
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="421.083" height="1008.987" viewBox="0 0 421.083 1008.987">
+  <defs>
+    <filter id="Left_Full_BG" x="0" y="0" width="421.083" height="1008.987" filterUnits="userSpaceOnUse">
+      <feOffset dy="34" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Left_Full_BG)">
+    <path id="Left_Full_BG-2" data-name="Left Full BG" d="M0,711.987V0C9.293,10.79,18.18,21.872,26.416,32.94,34.781,44.18,42.716,55.729,50,67.267,57.393,78.973,64.326,91,70.607,103.014c6.371,12.186,12.251,24.7,17.479,37.2,5.3,12.675,10.079,25.691,14.2,38.687,4.181,13.174,7.807,26.7,10.78,40.207,3.012,13.685,5.437,27.735,7.208,41.759,1.794,14.207,2.968,28.79,3.488,43.344.527,14.739.4,29.867-.379,44.962-.788,15.282-2.267,30.965-4.395,46.613-2.154,15.839-5.033,32.089-8.559,48.3-3.568,16.4-7.9,33.231-12.871,50.014C92.53,511.08,86.7,528.5,80.23,545.865c-6.543,17.568-13.924,35.584-21.938,53.547-8.1,18.166-17.085,36.792-26.694,55.363C21.884,673.549,11.253,692.8,0,711.984Z" transform="translate(148.5 114.5)" fill="#f9f9f9"/>
+  </g>
+</svg>
